@@ -25,9 +25,9 @@ module.exports = {
       options: {
         trackingId: "UA-50412981-1",
         anonymize: true,
-        respectDNT: true,
+        respectDNT: true
       }
-    }
+    },
     {
       resolve: "gatsby-plugin-feed",
       options: {
