@@ -1,0 +1,135 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
+  "routes": [
+    { "src": "/feed", "dest": "/rss.xml" },
+    { "src": "/posts", "dest": "/" },
+    {
+      "src": "/posts/2016/adventure-time-with-webpack",
+      "dest": "/adventure-time-with-webpack"
+    },
+    {
+      "src": "/posts/2016/using-a-database-for-localization-in-laravel",
+      "dest": "/using-a-database-for-localization-in-laravel"
+    },
+    {
+      "src": "/posts/2016/dealing-with-templates-in-vue-20",
+      "dest": "/dealing-with-templates-in-vue-20"
+    },
+    {
+      "src": "/posts/2017/non-breaking-seo-friendly-urls-in-laravel",
+      "dest": "/non-breaking-seo-friendly-urls-in-laravel"
+    },
+    {
+      "src": "/posts/2017/a-package-for-snapshot-testing-in-phpunit",
+      "dest": "/a-package-for-snapshot-testing-in-phpunit"
+    },
+    {
+      "src": "/posts/2017/automatically-running-phpunit-with-watchman",
+      "dest": "/automatically-running-phpunit-with-watchman"
+    },
+    {
+      "src": "/posts/2017/the-list-function-and-practical-uses-of-array-destructuring-in-php",
+      "dest": "/the-list-function-and-practical-uses-of-array-destructuring-in-php"
+    },
+    {
+      "src": "/posts/2017/typescript-with-laravel-mix",
+      "dest": "/typescript-with-laravel-mix"
+    },
+    {
+      "src": "/posts/2017/exposing-multiple-vue-components-as-a-plugin",
+      "dest": "/exposing-multiple-vue-components-as-a-plugin"
+    },
+    {
+      "src": "/posts/2017/fragmentation-is-fabulous",
+      "dest": "/fragmentation-is-fabulous"
+    },
+    {
+      "src": "/posts/2017/is-snapshot-testing-viable-in-php",
+      "dest": "/is-snapshot-testing-viable-in-php"
+    },
+    {
+      "src": "/posts/2017/using-registered-event-listeners-as-conditionals-in-vue",
+      "dest": "/using-registered-event-listeners-as-conditionals-in-vue"
+    },
+    {
+      "src": "/posts/2017/generate-pdfs-with-google-chrome-on-a-forge-provisioned-server",
+      "dest": "/generate-pdfs-with-google-chrome-on-a-forge-provisioned-server"
+    },
+    {
+      "src": "/posts/2017/whats-in-our-babelrc",
+      "dest": "/whats-in-our-babelrc"
+    },
+    {
+      "src": "/posts/2017/introducing-our-company-guidelines-site",
+      "dest": "/introducing-our-company-guidelines-site"
+    },
+    {
+      "src": "/posts/2017/theme-based-views-in-laravel-using-vendor-namespaces",
+      "dest": "/theme-based-views-in-laravel-using-vendor-namespaces"
+    },
+    {
+      "src": "/posts/2017/diving-into-requestanimationframe-with-benjamin-de-cock",
+      "dest": "/diving-into-requestanimationframe-with-benjamin-de-cock"
+    },
+    {
+      "src": "/posts/2017/debugging-the-dreaded-class-log-does-not-exist-error-in-laravel",
+      "dest": "/debugging-the-dreaded-class-log-does-not-exist-error-in-laravel"
+    },
+    {
+      "src": "/posts/2017/nordicjs-2017-recap",
+      "dest": "/nordicjs-2017-recap"
+    },
+    {
+      "src": "/posts/2018/christoph-rumpel-on-rebuilding-his-site-with-laravel",
+      "dest": "/christoph-rumpel-on-rebuilding-his-site-with-laravel"
+    },
+    {
+      "src": "/posts/2018/passing-data-to-layouts-in-blade-through-extends",
+      "dest": "/passing-data-to-layouts-in-blade-through-extends"
+    },
+    {
+      "src": "/posts/2018/blade-component-aliases-in-laravel-56",
+      "dest": "/blade-component-aliases-in-laravel-56"
+    },
+    {
+      "src": "/posts/2018/a-pair-of-helping-hands-when-naming-things",
+      "dest": "/a-pair-of-helping-hands-when-naming-things"
+    },
+    {
+      "src": "/posts/2018/server-side-rendering-javascript-from-php",
+      "dest": "/server-side-rendering-javascript-from-php"
+    },
+    {
+      "src": "/posts/2018/design-details-incremental-correctness-with-guillermo-rauch",
+      "dest": "/design-details-incremental-correctness-with-guillermo-rauch"
+    },
+    { "src": "/posts/2018/a-good-issue", "dest": "/a-good-issue" },
+    {
+      "src": "/posts/2018/code-splitting-with-laravel-mix",
+      "dest": "/code-splitting-with-laravel-mix"
+    },
+    {
+      "src": "/posts/2018/vue-templates-in-jsx",
+      "dest": "/vue-templates-in-jsx"
+    },
+    {
+      "src": "/posts/2018/distraction-less-user-interfaces-delayed-transient-states",
+      "dest": "/distraction-less-user-interfaces-delayed-transient-states"
+    },
+    {
+      "src": "/posts/2018/mo-models-mo-problems",
+      "dest": "/mo-models-mo-problems"
+    },
+    {
+      "src": "/posts/2018/highlighting-code-blocks-with-leaguecommonmark",
+      "dest": "/highlighting-code-blocks-with-leaguecommonmark"
+    }
+  ]
+}
