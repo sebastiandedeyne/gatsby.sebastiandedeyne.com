@@ -1,4 +1,5 @@
 import "../styles/app.css";
+import "../styles/code.css";
 
 import React from "react";
 import Meta from "./Meta";
