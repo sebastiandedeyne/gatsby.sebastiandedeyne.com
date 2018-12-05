@@ -42,7 +42,7 @@
     "dev": "gatsby develop",
     "now-build": "gatsby build",
     "make:post": "node console make:post",
-    "format": "prettier --write 'src/**/*.js' 'src/**/*.md'",
+    "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public ."
   }
 }
