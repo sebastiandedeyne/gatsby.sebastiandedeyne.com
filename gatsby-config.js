@@ -39,8 +39,8 @@ module.exports = {
                   title: edge.node.fields.title,
                   description: edge.node.html,
                   date: new Date(),
-                  url: `https://sebastiandedeyne.com/${edge.node.fields.slug}`,
-                  guid: `https://sebastiandedeyne.com/${edge.node.fields.slug}`
+                  url: `https://sebastiandedeyne.com${edge.node.fields.slug}`,
+                  guid: `https://sebastiandedeyne.com${edge.node.fields.slug}`
                 };
               });
             },
