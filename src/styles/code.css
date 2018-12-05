@@ -6,7 +6,7 @@
 
 .markup :not(pre) code {
   background-color: var(--secondary-background);
-  color: #1b6498;
+  color: var(--text-highlight);
   display: inline-block;
   padding: 0 0.4em;
   border-radius: 4px;
