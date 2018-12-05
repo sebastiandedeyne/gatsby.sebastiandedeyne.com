@@ -104,7 +104,7 @@ export default function Meta({ title, description }) {
       <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
       <link
-        href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Source+Code+Pro|Space+Mono:700"
+        href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|IBM+Plex+Mono|Space+Mono:700"
         rel="stylesheet"
       />
     </Helmet>
