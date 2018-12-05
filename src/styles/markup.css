@@ -54,10 +54,10 @@
 }
 
 .markup :not(pre) code {
-  color: white;
+  background: var(--secondary-background);
+  border-radius: 4px;
   display: inline-block;
   padding: 0 0.4em;
-  border-radius: 4px;
 }
 
 /**
