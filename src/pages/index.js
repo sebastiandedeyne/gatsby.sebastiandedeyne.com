@@ -8,8 +8,12 @@ export default function Index({ data }) {
 
   return (
     <Layout>
-      {posts.map(({ node }) => (
-        <Post key={node.fields.slug} {...node.fields}>
+      {posts.map(({ node }, i) => (
+        <Post
+          key={node.fields.slug}
+          style={{ marginBottom: "6rem" }}
+          {...node.fields}
+        >
           <section
             className="markup"
             dangerouslySetInnerHTML={{

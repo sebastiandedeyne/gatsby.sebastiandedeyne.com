@@ -1,0 +1,55 @@
+:root {
+  --text: #1f211f;
+  --text-light: #5e6669;
+  --text-lighter: #a7b3b7;
+  --text-highlight: #60b1b9;
+  --background: white;
+  --secondary-background: #f4f8fa;
+  --sans: Karla, system-ui, sans-serif;
+  --mono: Space Mono, system-ui;
+  --code: Source Code Pro, monospace;
+  --gutter: 1rem;
+}
+
+@media (min-width: 720px) {
+  :root {
+    --gutter: 3rem;
+  }
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+  font-family: var(--sans);
+  margin-bottom: 3rem;
+}

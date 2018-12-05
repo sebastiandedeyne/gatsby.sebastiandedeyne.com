@@ -1,0 +1,213 @@
+.markup > * {
+  margin-bottom: 1.5rem;
+}
+
+.markup h2 {
+  font-family: var(--mono);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.markup a {
+  color: var(--text-highlight);
+  text-decoration: underline;
+}
+
+.markup em {
+  font-style: italic;
+}
+
+.markup strong {
+  font-weight: bold;
+}
+
+.markup ul {
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+.markup img {
+  display: block;
+}
+
+.markup pre,
+.markup .cp_embed_wrapper {
+  margin-left: calc(var(--gutter) * -1);
+  margin-right: calc(var(--gutter) * -1);
+}
+
+.markup code {
+  font-family: var(--code);
+  font-size: 0.85em;
+  background-color: var(--secondary-background);
+}
+
+.markup :not(pre) code {
+  background-color: var(--secondary-background);
+  color: var(--text-highlight);
+  display: inline-block;
+  padding: 0 0.4em;
+  border-radius: 4px;
+}
+
+.markup code[class*="language-"],
+.markup pre[class*="language-"] {
+  line-height: 2;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: var(--secondary-background);
+  color: #4299d7;
+  border-radius: 4px;
+}
+
+.markup pre[class*="language-"]::-moz-selection,
+.markup pre[class*="language-"] ::-moz-selection,
+.markup code[class*="language-"]::-moz-selection,
+.markup code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: var(--secondary-background);
+}
+
+.markup pre[class*="language-"]::selection,
+.markup pre[class*="language-"] ::selection,
+.markup code[class*="language-"]::selection,
+.markup code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: var(--secondary-background);
+}
+
+.markup pre[class*="language-"] {
+  padding: 1rem;
+  overflow: auto;
+}
+.markup :not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.markup .token.comment,
+.markup .token.prolog,
+.markup .token.doctype,
+.markup .token.cdata {
+  color: #bdc3b7;
+}
+
+.markup .token.punctuation {
+  color: #bdc3b7;
+}
+
+.markup .token.namespace {
+  opacity: 0.7;
+}
+
+.markup .token.tag,
+.markup .token.operator,
+.markup .token.number {
+  color: #1b6498;
+}
+
+.markup .token.property,
+.markup .token.function {
+  color: #66a329;
+}
+
+.markup .token.tag-id,
+.markup .token.selector,
+.markup .token.atrule-id {
+  color: #4d8217;
+}
+
+.markup code.language-javascript,
+.markup .token.attr-name {
+  color: #66a329;
+}
+
+.markup code.language-css,
+.markup code.language-scss,
+.markup .token.boolean,
+.markup .token.string,
+.markup .token.entity,
+.markup .token.url,
+.markup .language-css .token.string,
+.markup .language-scss .token.string,
+.markup .style .token.string,
+.markup .token.attr-value,
+.markup .token.keyword,
+.markup .token.control,
+.markup .token.directive,
+.markup .token.unit,
+.markup .token.statement,
+.markup .token.regex,
+.markup .token.atrule {
+  color: #277fbe;
+}
+
+.markup .token.placeholder,
+.markup .token.variable {
+  color: #8dcefc;
+}
+
+.markup .token.deleted {
+  text-decoration: line-through;
+}
+
+.markup .token.inserted {
+  border-bottom: 1px dotted #4d8217;
+  text-decoration: none;
+}
+
+.markup .token.italic {
+  font-style: italic;
+}
+
+.markup .token.important,
+.markup .token.bold {
+  font-weight: bold;
+}
+
+.markup .token.important {
+  color: #66a329;
+}
+
+.markup .token.entity {
+  cursor: help;
+}
+
+.markup pre > code.highlight {
+  outline: 0.4em solid #66a329;
+  outline-offset: 0.4em;
+}
+
+.markup .line-numbers .line-numbers-rows {
+  border-right-color: #f3f4f1;
+}
+
+.markup .line-numbers-rows > span:before {
+  color: #d1d6cd;
+}
+
+.markup .line-highlight {
+  background: rgba(77, 130, 23, 0.2);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(70%, rgba(77, 130, 23, 0.2)),
+    to(rgba(77, 130, 23, 0))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(77, 130, 23, 0.2) 70%,
+    rgba(77, 130, 23, 0)
+  );
+}

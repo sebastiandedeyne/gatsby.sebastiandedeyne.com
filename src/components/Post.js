@@ -8,19 +8,38 @@ export default function Post({
   formattedDate,
   slug,
   externalLink,
-  children
+  children,
+  style = null
 }) {
   return (
-    <article className="post">
-      <header className="post-header">
-        <h1>
+    <article style={style}>
+      <header
+        style={{
+          lineHeight: "1.2",
+          marginBottom: "3rem",
+          textAlign: "center"
+        }}
+      >
+        <h1
+          style={{
+            fontWeight: "bold",
+            fontSize: "1.2rem",
+            fontFamily: "var(--mono)"
+          }}
+        >
           {externalLink ? (
             <a href={externalLink}>{title}</a>
           ) : (
             <Link to={slug}>{title}</Link>
           )}
         </h1>
-        <aside>
+        <aside
+          style={{
+            marginTop: "0.33rem",
+            fontSize: "0.9rem",
+            color: "var(--text-light)"
+          }}
+        >
           <Link to={slug}>
             <time dateTime={date}>{formattedDate}</time>
             {subtitle && (
