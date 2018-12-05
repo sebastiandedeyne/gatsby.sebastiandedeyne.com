@@ -133,5 +133,8 @@
       "src": "/posts/2018/highlighting-code-blocks-with-leaguecommonmark",
       "dest": "/highlighting-code-blocks-with-leaguecommonmark"
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
