@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "name": "sebastiandedeyne.com",
+  "alias": "sebastiandedeyne.com",
   "builds": [
     {
       "src": "package.json",
