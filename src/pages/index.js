@@ -9,18 +9,14 @@ export default function Index({ data }) {
   return (
     <Layout>
       {posts.map(({ node }, i) => (
-        <Post
-          key={node.fields.slug}
-          style={{ marginBottom: "6rem" }}
-          {...node.fields}
-        >
+        <Post key={node.fields.slug} {...node.fields}>
           <section
             className="markup"
             dangerouslySetInnerHTML={{
               __html: node.fields.summary
             }}
           />
-          {node.fields.summary && (
+          {node.fields.isSummarized && (
             <p className="markup">
               <Link to={node.fields.slug}>Read more</Link>
             </p>

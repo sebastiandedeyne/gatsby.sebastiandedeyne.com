@@ -25,7 +25,7 @@ module.exports = function makePost(title) {
   }
 
   const filename = `${format(new Date(), "YYYY-MM-DD")}.${sluggify(title)}.md`;
-  const path = `${__dirname}/src/pages/posts/${filename}`;
+  const path = `${__dirname}/../src/pages/posts/${filename}`;
 
   return exists(path).then(exists => {
     if (exists) {

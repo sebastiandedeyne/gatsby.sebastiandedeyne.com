@@ -8,11 +8,10 @@ export default function Post({
   formattedDate,
   slug,
   externalLink,
-  children,
-  style = null
+  children
 }) {
   return (
-    <article style={style}>
+    <article style={{ marginBottom: "6rem" }}>
       <header
         style={{
           lineHeight: "1.2",
@@ -63,6 +62,7 @@ export const query = graphql`
       subtitle
       slug
       summary
+      isSummarized
       externalLink
       date: date(formatString: "YYYY-MM-DD")
       formattedDate: date(formatString: "MMMM Do YYYY")

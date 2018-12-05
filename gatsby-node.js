@@ -85,10 +85,20 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value: node.frontmatter.link
     });
 
+    const isSummarized = !!node.frontmatter.summary;
+
+    createNodeField({
+      name: "isSummarized",
+      node,
+      value: isSummarized
+    });
+
     createNodeField({
       name: "summary",
       node,
-      value: markdown(node.frontmatter.summary) || node.html
+      value: markdown(
+        isSummarized ? node.frontmatter.summary : node.rawMarkdownBody
+      )
     });
 
     createNodeField({
