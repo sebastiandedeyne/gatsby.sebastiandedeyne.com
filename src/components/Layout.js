@@ -21,7 +21,7 @@ export default function Layout({ title, children }) {
             <a href="https://twitter.com/sebdedeyne">Twitter</a>
           </li>
           <li>
-            <a href="rss.xml">RSS</a>
+            <a href="/rss.xml">RSS</a>
           </li>
         </ul>
       </nav>
