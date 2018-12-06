@@ -4,8 +4,8 @@ import Layout from "../components/Layout";
 
 export default function About() {
   return (
-    <Layout title="About">
-      <div className="markup">
+    <Layout title="About" wrap>
+      <div className="markup" style={{ paddingBottom: "3rem" }}>
         <p>
           I'm a web designer and developer from Ghent, employed at{" "}
           <a href="https://spatie.be">Spatie</a> in Antwerp, Belgium. I build

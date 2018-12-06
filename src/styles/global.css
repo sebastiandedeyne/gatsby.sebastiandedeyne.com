@@ -3,8 +3,8 @@
   --text-light: #5e6669;
   --text-lighter: #a7b3b7;
   --text-highlight: #60b1b9;
-  --background: white;
   --secondary-background: #f4f8fa;
+  --border-color: #ececec;
   --sans: Karla, system-ui, sans-serif;
   --mono: Space Mono, system-ui;
   --code: IBM Plex Mono, monospace;
@@ -49,7 +49,5 @@ html {
 
 body {
   color: var(--text);
-  background-color: var(--background);
   font-family: var(--sans);
-  margin-bottom: 3rem;
 }

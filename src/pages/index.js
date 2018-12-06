@@ -9,19 +9,31 @@ export default function Index({ data }) {
   return (
     <Layout>
       {posts.map(({ node }, i) => (
-        <Post key={node.fields.slug} {...node.fields}>
-          <section
-            className="markup"
-            dangerouslySetInnerHTML={{
-              __html: node.fields.summary
-            }}
-          />
-          {node.fields.isSummarized && (
-            <p className="markup">
-              <Link to={node.fields.slug}>Read more</Link>
-            </p>
-          )}
-        </Post>
+        <div
+          style={{
+            paddingBottom: "4rem",
+            ...(i !== posts.length - 1 && {
+              borderBottom: "1px solid var(--border-color)",
+              marginBottom: "4rem"
+            })
+          }}
+        >
+          <Layout.Wrapper>
+            <Post key={node.fields.slug} {...node.fields}>
+              <section
+                className="markup"
+                dangerouslySetInnerHTML={{
+                  __html: node.fields.summary
+                }}
+              />
+              {node.fields.isSummarized && (
+                <p className="markup">
+                  <Link to={node.fields.slug}>Read more</Link>
+                </p>
+              )}
+            </Post>
+          </Layout.Wrapper>
+        </div>
       ))}
     </Layout>
   );

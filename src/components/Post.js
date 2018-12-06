@@ -8,15 +8,16 @@ export default function Post({
   formattedDate,
   slug,
   externalLink,
+  style,
   children
 }) {
   return (
-    <article style={{ marginBottom: "6rem" }}>
+    <article style={style}>
       <header
         style={{
           lineHeight: "1.2",
-          marginBottom: "3rem",
-          textAlign: "center"
+          textAlign: "center",
+          marginBottom: "3rem"
         }}
       >
         <h1
