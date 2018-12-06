@@ -10,6 +10,7 @@ export default function Index({ data }) {
     <Layout>
       {posts.map(({ node }, i) => (
         <div
+          key={node.fields.slug}
           style={{
             paddingBottom: "4rem",
             ...(i !== posts.length - 1 && {
@@ -19,7 +20,7 @@ export default function Index({ data }) {
           }}
         >
           <Layout.Wrapper>
-            <Post key={node.fields.slug} {...node.fields}>
+            <Post {...node.fields}>
               <section
                 className="markup"
                 dangerouslySetInnerHTML={{

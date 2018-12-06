@@ -9,43 +9,46 @@ export default function Layout({ title, wrap, children }) {
   return (
     <>
       <Meta title={title} />
-      <Layout.Wrapper>
-        <nav
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            paddingTop: "0.5rem",
-            marginBottom: "4rem",
-            fontSize: "0.75rem",
-            color: "var(--text-lighter)"
-          }}
-        >
-          <header>
-            <Link to="/">Sebastian De Deyne</Link>
-          </header>
-          <ul style={{ display: "flex" }}>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li style={{ marginLeft: "1rem" }}>
-              <a href="https://twitter.com/sebdedeyne">Twitter</a>
-            </li>
-            <li style={{ marginLeft: "1rem" }}>
-              <a href="/rss.xml">RSS</a>
-            </li>
-          </ul>
-        </nav>
+      <Layout.Wrapper
+        tag="nav"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          paddingTop: "0.5rem",
+          marginBottom: "4rem",
+          fontSize: "0.75rem",
+          color: "var(--text-lighter)"
+        }}
+      >
+        <header>
+          <Link to="/">Sebastian De Deyne</Link>
+        </header>
+        <ul style={{ display: "flex" }}>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li style={{ marginLeft: "1rem" }}>
+            <a href="https://twitter.com/sebdedeyne">Twitter</a>
+          </li>
+          <li style={{ marginLeft: "1rem" }}>
+            <a href="/rss.xml">RSS</a>
+          </li>
+        </ul>
       </Layout.Wrapper>
-      <main>
-        {wrap ? <Layout.Wrapper>{children}</Layout.Wrapper> : children}
-      </main>
+      {wrap ? (
+        <Layout.Wrapper tag="main">{children}</Layout.Wrapper>
+      ) : (
+        <main>{children}</main>
+      )}
     </>
   );
 }
 
-Layout.Wrapper = function Wrapper({ children, style = null }) {
+Layout.Wrapper = function Wrapper({ children, tag = "div", style = null }) {
+  const Element = tag;
+
   return (
-    <div
+    <Element
       style={{
         marginLeft: "auto",
         marginRight: "auto",
@@ -57,6 +60,6 @@ Layout.Wrapper = function Wrapper({ children, style = null }) {
       }}
     >
       {children}
-    </div>
+    </Element>
   );
 };
